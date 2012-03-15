@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Simplifying Units of Measurement | MathSkills</title>
+<link href='http://fonts.googleapis.com/css?family=Nobile:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="jquery-ui-1.8.17.custom/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jquery-ui-1.8.17.custom/js/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript" src="simplify.js"></script>
+<link href="simplify.css" rel="stylesheet" type="text/css">
+<link href="jquery-ui-1.8.17.custom/css/ui-lightness/jquery-ui-1.8.17.custom.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="header" class="ui-corner-all">
+  <div class="wrapper">
+    <div class="frame1">
+      <h1 style="text-align:left;color:white;">Math Skills</h1>
+    </div>
+    <!--frame1-->
+    <div style="width:30%;text-align:left;" class="frame2">Arithmetic for College Students</div>
+    <!--frame2-->
+    <div style="width:65%;" class="frame3"> <a href="#">Next</a> | <a href="#">Previous</a> |
+<a href="#">Repeat</a>| <a href="#">Home</a> </div>
+    <!--frame3--> 
+    
+  </div>
+  <!--wrapper-->
+  <div class="clear"></div>
+</div>
+<!--header-->
+
+<div id="main">
+  <div class="wrapper">
+    <div id="problem">
+      
+        <h1>Simplifying Units of Measurement</h1>
+    
+     
+    </div>
+    <!--problem-->
+     <div id="ruler">
+     <div id="ruler-yards"><div class="ruler-caption"><span id="yd">1</span> Yd</div>
+    </div>
+     <div id="ruler-feet"><div class="ruler-caption"><span id="ft">2</span> Ft</div>
+    </div>
+     <div id="ruler-inches"><div class="ruler-caption"><span id="in">43</span> In</div>
+    </div>
+    </div>
+    <div id="step1" class="ui-corner-all">
+      <div class="frame1">
+        <h3>Simplify this Measurement<br>
+          <br>
+          Enter the correct answer at any time
+        </h3>
+      </div>
+      <!--frame1-->     
+    
+       <div class="frame2">
+        <p>
+          <input type="text" id="givenyards" size="2" readonly value="1">
+          Yards
+          <input type="text" id="givenfeet" size="2" readonly  value="2">
+          Feet
+          <input type="text" id="giveninches" size="2" readonly  value="43">
+          Inches<br>
+          <br>
+          answer <span style="font-size:250%;">=</span>
+          <input type="text" id="yards" size="2">
+          Yards
+          <input type="text" id="feet" size="2">
+          Feet
+          <input type="text" id="inches" size="2">
+          Inches </p>
+        </div>
+        <!--frame2-->
+        <div class="frame3">
+        <input type="button" class="button" id="form1enter" value="Check Answer"><br><br>
+        <input type="button" class="button" id="form1help" value="Help">
+     </div>
+     <!--frame3-->
+    
+    <div class="clear"></div>
+    <div class="popup" id="form1true">
+      <p>Wow, great work!</p>
+    </div>
+    <!--form1true-->
+    <div class="popup" id="form1false">
+      <p>Sorry, you may want to try the next step.</p>
+      <input type="button" value="Next Step" id="nextstep1">
+    </div>
+    <!--form1false--> 
+  </div>
+  <!--step1-->
+  
+  <div id="step2" class="ui-corner-all">
+ 
+    <div class="frame1">
+     <h3>Step 1: Start by simplifying the smallest unit</h3>
+      
+       <p><input type="text" id="iinchesgiven" size="2" readonly value="43">
+        Inches<br>
+        <br>
+        <span style="font-size:250%;">=</span>
+        <input type="text" id="ifeet" size="2">
+        Feet
+        <input type="text" id="iinches" size="2">
+        Inches</p> 
+      </div>
+      <!--frame1-->
+      <div class="frame2"> 
+        <h3>12 inches <span style="font-size:150%;">=</span> 1 foot<br>
+          43 &divide; 12 <span style="font-size:150%;">=</span> how many feet?<br>
+...with how many inches remaining?</h3>
+      </div>
+      <!--frame2-->
+      <div class="frame3">
+      <input type="button" class="button" id="form2enter" value="Check Answer"><br><br>
+      <input type="button" class="button" id="form2help" value="Help">
+    </div>
+ 
+  <!--frame3-->
+  <div class="clear"></div>
+ 
+</div>
+<!--step2-->
+
+<div id="subresult1">
+<div class="frame1">
+  <h3>Step 1: The inches are simplified like this:</h3>
+  </div>
+  <!--frame1-->
+  <div class="frame2">
+    <p style="background-image: url(images/arrows.png);background-repeat: no-repeat;background-position:260px 20px;"><input type="text"  size="2" readonly value="43">
+        Inches
+        
+        <br><br> <span style="font-size:250%;">=</span>
+        <input type="text" style="border-color:green;" size="2" readonly value="3">
+        Feet
+        <input type="text" style="border-color:green;"  size="2" readonly value="7">
+        Inches</p> 
+</div>
+<!--frame2-->
+<div class="clear"></div>
+</div>
+<!--subresult1-->
+<div id="step3" class="ui-corner-all">
+
+ <div class="frame1">
+  
+  
+    <h3>Now add the feet from step 1 to the original number of feet.</h3>
+     <p style="margin-right:70px;"><input type="text"  size="2" readonly value="3">
+        Feet<br>
+        <br>
+        <span style="font-size:250%;">+</span>
+        
+        <input type="text"  size="2" readonly value="2">
+        Feet</p> 
+       
+      <p style="margin-right:70px;">
+      
+      <input type="text" id="givenffeet" size="2"  >
+      Feet
+     </p>
+      
+          
+   
+    </div>
+    <!--frame1-->
+    <div class="frame2"><h3>3 feet <span style="font-size:150%;">+</span> 2 feet <span style="font-size:150%;">=</span> 5 feet</h3>
+     
+    </div>
+    <!--frame2-->
+    <div class="frame3">
+    <input type="button" class="button" id="form3enter" value="Check Answer"><br><br>
+    <input type="button" class="button" id="form3help" value="Help">
+  
+</div>
+<!--frame3-->
+
+<div class="clear"></div>
+</div>
+<!--step3-->
+
+<div id="subresult2">
+<div class="frame1">
+  <h3>Step 2: Now we have simplified to:</h3>
+  </div>
+  <!--frame1-->
+  <div class="frame2">
+  <p style="margin-right:70px;">
+     <span style="font-size:250%;">+</span> 2 feet
+  
+  
+  </p>
+  
+    <p><input type="text"  size="2" readonly value="1">
+        Yards       
+        <input type="text"  size="2" readonly value="5">
+        Feet
+        <input type="text"   size="2" readonly value="7">
+        Inches</p> 
+</div>
+<!--frame2-->
+<div class="clear"></div>
+</div>
+<!--subresult2-->
+
+
+
+<div id="step4" class="ui-corner-all">
+  <div class="frame1">
+   <h3> Next, simplify the  feet unit of measurement</h3>
+     <p style="margin-right:70px;"> <input type="text" id="givenffeet2" size="2" readonly  value="5">
+      Feet <br>
+      <br>
+      <span style="font-size:250%;">=</span>
+      <input type="text" id="fyards" size="2">
+      Yards
+      <input type="text" id="ffeet" size="2">
+      Feet </p>
+  
+  
+  </div>
+  <!--frame1-->
+   <div class="frame2">
+       <h3>3 feet  <span style="font-size:150%;">=</span> 1 yard<br>
+          5 <span style="font-size:150%;">&divide;</span> 3 <span style="font-size:150%;">=</span> how many yards?<br>
+...with how many feet remaining?</h3>
+    </div>
+    <!--frame2-->
+    <div class="frame3">
+    <input type="button" class="button" id="form4enter" value="Check Answer"><br><br>
+    <input type="button" class="button" id="form4help" value="Help">
+  
+</div>
+<!--frame3-->
+<div class="clear"></div>
+  <div class="popup" id="form4false">
+      <p>Try Again?</p>
+    </div>
+  
+  
+  
+  <div class="clear"></div>
+</div>
+<!--step4--> 
+  
+  
+  <div id="subresult3">
+<div class="frame1">
+  <h3>Step 3: The feet are simplified like this:</h3>
+  </div>
+  <!--frame1-->
+  <div class="frame2">
+    <p style="margin-right:90px;background-image: url(images/arrows.png);background-repeat: no-repeat;background-position: 180px 20px;"><input type="text"  size="2" readonly value="5">
+        Feet
+        
+        <br>
+        <br> <span style="font-size:250%;">=</span>
+        <input type="text" style="border-color:green;" size="2" readonly value="1">
+        Yards
+        <input type="text" style="border-color:green;"  size="2" readonly value="2">
+        Feet</p> 
+</div>
+<!--frame2-->
+<div class="clear"></div>
+</div>
+<!--subresult3-->
+  
+  <div id="step5" class="ui-corner-all">
+
+ <div class="frame1">
+  
+  
+    <h3>Now add the yards from step 1 to the original number of yards.</h3>
+     <p style="margin-right:130px;"><input type="text"  size="2" readonly value="1">
+        Yards<br>
+        <br>
+        <span style="font-size:250%;">+</span>
+        
+        <input type="text"  size="2" readonly value="1">
+        Yards<br><br><span style="font-size:250%;">=</span> 
+      
+      <input type="text" id="totalyards" size="2"  >Yards</p>
+      
+          
+   
+    </div>
+    <!--frame1-->
+    <div class="frame2">
+     
+    </div>
+    <!--frame2-->
+    <div class="frame3">
+    <input type="button" class="button" id="form5enter" value="Check Answer"><br><br>
+    <input type="button" class="button" id="form5help" value="Help">
+  
+</div>
+<!--frame3-->
+
+<div class="clear"></div>
+</div>
+<!--step5-->
+  
+    <div id="subresult4">
+<div class="frame1">
+  <h3>Final Step - Add up the yards to determine the final answer.</h3>
+  </div>
+  <!--frame1-->
+  <div class="frame2">
+   
+</div>
+<!--frame2-->
+<div class="clear"></div>
+</div>
+<!--subresult4-->
+        
+ 
+
+</div>
+</div>
+<div id="footer">
+  <div class="wrapper">
+    <p><em style="font-size:75%;">&copy; 2012 MathSkills is a project of Santa Rosa Junior College.</em></p>
+  </div>
+  <!--wrapper--> 
+</div>
+<!--main-->
+
+</body>
+</html>

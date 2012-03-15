@@ -1,0 +1,490 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Simplifying Units of Measurement | MathSkills</title>
+<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Nobile:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="jquery-ui-1.8.17.custom/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jquery-ui-1.8.17.custom/js/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript" src="simplify.js"></script>
+<link href="simplify.css" rel="stylesheet" type="text/css">
+<link href="jquery-ui-1.8.17.custom/css/ui-lightness/jquery-ui-1.8.17.custom.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="header" class="ui-corner-all">
+  <div class="wrapper">
+    <h1 style="text-align:left;color:white;width:45%;float:left;">Math Skills<span style="font-size:30%;">&nbsp; &copy; 2012 <a href="http://www.santarosa.edu/">Santa Rosa Junior College</a></span></h1>
+    <div style="text-align:right;width:50%;float:right;margin-top:20px;"> <a href="#">Next</a> | <a href="#">Previous</a> | <a href="#">Repeat</a>| <a href="#">Home</a> </div>
+  </div>
+  <!--wrapper-->
+  <div class="clear"></div>
+</div>
+<!--header-->
+<div id="main">
+  <div class="wrapper">
+    <div id="problem">
+      <h2>Simplifying Units of Measurement</h2>
+    </div>
+    <!--problem-->
+    <div id="ruler">
+      <div id="ruler-yards" class="translucent">
+        <div class="ruler-caption"><span id="yd">1</span> Yd</div>
+      </div>
+      <div id="ruler-feet" class="translucent">
+        <div class="ruler-caption"><span id="ft">2</span> Ft</div>
+      </div>
+      <div id="ruler-inches" class="translucent">
+        <div class="ruler-caption"><span id="in">43</span> In</div>
+      </div>
+    </div>
+    <div id="step1" class="ui-corner-all">
+      <div class="frame1">
+        <h3>Simplify this Measurement</h3>
+      </div>
+      
+      <!--frame1-->
+      
+      <div class="frame2">
+        <p>
+          <input type="text" id="givenyards" size="2" readonly value="1">
+          Yards
+          <input type="text" id="givenfeet" size="2" readonly  value="2">
+          Feet
+          <input type="text" id="giveninches" size="2" readonly  value="43">
+          Inches<br>
+          <br>
+          answer <span style="font-size:250%;">=</span>
+          <input type="text" id="yards" size="2">
+          Yards
+          <input type="text" id="feet" size="2">
+          Feet
+          <input type="text" id="inches" size="2">
+          Inches </p>
+      </div>
+      
+      <!--frame2-->
+      
+      <div class="frame3">
+        <input type="button" class="button" id="form1enter" value="Enter">
+        <br>
+        <br>
+        <input type="button" class="button" id="form1help" value="Help" >
+      </div>
+      
+      <!--frame3-->
+      
+      <div class="clear"></div>
+      <div class="popup" id="form1true">
+        <p>Wow, great work!</p>
+      </div>
+      
+      <!--form1true-->
+      
+      <div class="popup" id="form1false">
+        <h3>Sorry, that's incorrect.</h3>
+        <input type="button" value="Try Again" class="tryagain">
+        <input type="button" value="Help" id="nextstep1">
+      </div>
+      
+      <!--form1false--> 
+      
+    </div>
+    
+    <!--step1-->
+    
+    <div id="workbook">
+      <h3 style="text-align:center;">Workbook</h3>
+    </div>
+    <div id="step2" class="ui-corner-all">
+      <div class="frame1">
+        <h3>Step 1: Express the inches more simply in feet and inches. </h3>
+        <table>
+          <tr>
+            <td>&nbsp;&nbsp;</td>
+            <td><input type="text" size ="2" value="?" readonly />
+              <span>feet</span></td>
+          </tr>
+          <tr>
+            <td class="division1">12 inches  &nbsp;</td>
+            <td class="division2"><span></span>43 inches<span></span></td>
+          </tr>
+          <tr style="margin-top:3px;">
+            <td>&nbsp;&nbsp;</td>
+            <td class="remainder"><input type="text" size ="2" value="?" readonly />
+              inches</td>
+          </tr>
+        </table>
+        <h3>Since 12 inches equals 1 foot, we must divide 43 by 12. </h3>
+      </div>
+      
+      <!--frame1-->
+      
+      <div class="frame2">
+        <p>
+          <input type="text" id="iinchesgiven" size="2" readonly value="43">
+          Inches <span style="font-size:250%;">=</span>
+          <input type="text" id="ifeet" size="2" >
+          Feet
+          <input type="text" id="iinches" size="2" >
+          Inches</p>
+      </div>
+      
+      <!--frame2-->
+      
+      <div class="frame3">
+        <input type="button" class="button" id="form2enter" value="Enter">
+        <br>
+        <br>
+        <input type="button" class="button" id="form2help" value="Help">
+      </div>
+      
+      <!--frame3-->
+      
+      <div class="clear"></div>
+    </div>
+    
+    <!--step2-->
+    <div class="popup" id="form2true">
+      <p>Good. <br>
+      </p>
+      <input type="button" value="Next Step" id="nextstep2a">
+    </div>
+    
+    <!--form2true-->
+    
+    <div class="popup" id="form2false">
+      <p>Sorry, that is incorrect. <br>
+        <br>
+      </p>
+      <input type="button" value="Try Again" class="tryagain">
+      <input type="button" value="Help" id="nextstep2b">
+    </div>
+    
+    <!--form2false-->
+    
+    <div id="subresult1">
+      <div class="frame1">
+        <h3>Step 1: The inches are simplified into feet and inches.</h3>
+        <table>
+          <tr>
+            <td>&nbsp;&nbsp;</td>
+            <td><input type="text" size ="2" value="3" readonly />
+              <span>feet</span></td>
+          </tr>
+          <tr>
+            <td class="division1">12 inches &nbsp;</td>
+            <td class="division2"><span></span>43 inches<span></span></td>
+          </tr>
+          <tr style="margin-top:3px;">
+            <td>&nbsp;&nbsp;</td>
+            <td class="remainder"><input type="text" size ="2" value="7" readonly />
+              inches</td>
+          </tr>
+        </table>
+      </div>
+      
+      <!--frame1-->
+      
+      <div class="frame2">
+        <p style="background-image: url(images/arrows.png);background-repeat: no-repeat;background-position:260px 10px;">
+          <input type="text"  size="2" readonly value="43">
+          Inches <br>
+          <br>
+          <span style="font-size:250%;">=</span>
+          <input type="text" style="border-color:green;" size="2" readonly value="3">
+          Feet
+          <input type="text" style="border-color:green;"  size="2" readonly value="7">
+          Inches</p>
+      </div>
+      
+      <!--frame2-->
+      
+      <div class="clear"></div>
+    </div>
+    
+    <!--subresult1-->
+    
+    <div id="step3" class="ui-corner-all">
+      <div class="frame1">
+        <h3>Step 2: Now add the original number of feet to the feet "pulled out" from simplifying inches.</h3>
+      </div>
+      
+      <!--frame1-->
+      
+      <div class="frame2">
+        <p style="margin-left:180px;border-bottom-width: medium;	
+	border-bottom-style: solid;	
+	border-bottom-color: #000;width:100px;">
+          <input type="text"  size="2" readonly value="2">
+          Feet<br>
+          <br>
+          <span style="font-size:250%;">+</span>
+          <input type="text"  size="2" readonly value="3">
+          Feet</p>
+        <p style="margin-right:70px;">
+          <input type="text" id="givenffeet" size="2"  >
+          Feet </p>
+      </div>
+      
+      <!--frame2-->
+      
+      <div class="frame3">
+        <input type="button" class="button" id="form3enter" value="Enter">
+        <br>
+        <br>
+        <input type="button" class="button" id="form3help" value="Help">
+      </div>
+      
+      <!--frame3-->
+      
+      <div class="clear"></div>
+    </div>
+    
+    <!--step3-->
+    
+    <div class="popup" id="form3true">
+      <p>Good. </p>
+      <input type="button" value="Next Step" id="nextstep3a">
+    </div>
+    
+    <!--form2true-->
+    
+    <div class="popup" id="form3false">
+      <p>Sorry. that is incorrect.</p>
+      <input type="button" value="Try Again" class="tryagain">
+      <input type="button" value="Help" id="nextstep3b">
+    </div>
+    
+    <!--form2false-->
+    
+    <div id="subresult2">
+      <div class="frame1">
+        <h3>Step 2: Now we have simplified to:</h3>
+      </div>
+      
+      <!--frame1-->
+      
+      <div class="frame2">
+        <p style="margin-left:180px;border-bottom-width: medium;	
+	border-bottom-style: solid;	
+	border-bottom-color: #000;width:100px;">
+          <input type="text"  size="2" readonly value="2">
+          Feet<br>
+          <br>
+          <span style="font-size:250%;">+</span>
+          <input type="text"  size="2" readonly value="3">
+          Feet</p>
+        <p>
+          <input type="text"  size="2" readonly value="1">
+          Yards
+          <input type="text"  size="2" readonly value="5">
+          Feet
+          <input type="text"   size="2" readonly value="7">
+          Inches</p>
+      </div>
+      
+      <!--frame2-->
+      
+      <div class="clear"></div>
+    </div>
+    
+    <!--subresult2-->
+    
+    <div id="step4" class="ui-corner-all">
+      <div class="frame1">
+        <h3> Step 3: Simplify the feet into yards and feet.</h3>
+        <table>
+          <tr>
+            <td>&nbsp;&nbsp;</td>
+            <td><input type="text" size ="2" value="?" readonly />
+              <span>yards</span></td>
+          </tr>
+          <tr>
+            <td class="division1">3 feet &nbsp;</td>
+            <td class="division2"><span></span>5 feet<span></span></td>
+          </tr>
+          <tr style="margin-top:3px;">
+            <td>&nbsp;&nbsp;</td>
+            <td class="remainder"><input type="text" size ="2" value="?" readonly />
+              feet</td>
+          </tr>
+        </table>
+        <h3> Since 3 feet equals 1 yard, we must divide 5 by 3.</h3>
+      </div>
+      
+      <!--frame1-->
+      
+      <div class="frame2">
+        <p style="margin-right:70px;">
+          <input type="text" id="givenffeet2" size="2" readonly  value="5">
+          Feet &nbsp; <span style="font-size:250%;">=</span>
+          <input type="text" id="fyards" size="2">
+          Yards
+          <input type="text" id="ffeet" size="2">
+          Feet </p>
+      </div>
+      
+      <!--frame2-->
+      
+      <div class="frame3">
+        <input type="button" class="button" id="form4enter" value="Enter">
+        <br>
+        <br>
+        <input type="button" class="button" id="form4help" value="Help">
+      </div>
+      
+      <!--frame3-->
+      
+      <div class="clear"></div>
+    </div>
+    
+    <!--step4-->
+    <div class="popup" id="form4true">
+      <p>Good. </p>
+      <input type="button" value="Next Step" id="nextstep4a">
+    </div>
+    
+    <!--form4true-->
+    
+    <div class="popup" id="form4false">
+      <p>Sorry, that is incorrect.</p>
+      <input type="button" value="Try Again" class="tryagain">
+      <input type="button" value="Help" id="nextstep4b">
+    </div>
+    
+    <!--form4false-->
+    
+    <div id="subresult3">
+      <div class="frame1">
+        <h3>Step 3: The feet are simplified like this:</h3>
+        <table>
+          <tr>
+            <td>&nbsp;&nbsp;</td>
+            <td><input type="text" size ="2" value="1" readonly />
+              <span>yards</span></td>
+          </tr>
+          <tr>
+            <td class="division1">3 feet &nbsp;</td>
+            <td class="division2"><span></span>5 feet<span></span></td>
+          </tr>
+          <tr style="margin-top:3px;">
+            <td>&nbsp;&nbsp;</td>
+            <td class="remainder"><input type="text" size ="2" value="2" readonly />
+              feet</td>
+          </tr>
+        </table>
+      </div>
+      
+      <!--frame1-->
+      
+      <div class="frame2">
+        <p style="margin-right:90px;background-image: url(images/arrows.png);background-repeat: no-repeat;background-position: 180px 10px;">
+          <input type="text"  size="2" readonly value="5">
+          Feet <br>
+          <br>
+          <span style="font-size:250%;">=</span>
+          <input type="text" style="border-color:green;" size="2" readonly value="1">
+          Yards
+          <input type="text" style="border-color:green;"  size="2" readonly value="2">
+          Feet</p>
+      </div>
+      
+      <!--frame2-->
+      
+      <div class="clear"></div>
+    </div>
+    
+    <!--subresult3-->
+    
+    <div id="step5" class="ui-corner-all">
+      <div class="frame1">
+        <h3>Step 4: Add the yards that you 'pulled out' of the feet measurement to the yards that we started with.</h3>
+      </div>
+      
+      <!--frame1-->
+      
+      <div class="frame2">
+        <p style="margin-left:90px;border-bottom-width: medium;	
+	border-bottom-style: solid;	
+	border-bottom-color: #000;width:120px;">
+          <input type="text"  size="2" readonly value="1">
+          Yard<br>
+          <br>
+          <span style="font-size:250%;">+</span>
+          <input type="text"  size="2" readonly value="1">
+          Yard</p>
+          <p style="margin-left:90px;width:120px;">
+          <span style="font-size:250%;">=</span>
+          <input type="text" id="totalyards" size="2"  >
+          Yards</p>
+      </div>
+      
+      <!--frame2-->
+      
+      <div class="frame3">
+        <input type="button" class="button" id="form5enter" value="Enter">
+        <br>
+        <br>
+        <input type="button" class="button" id="form5help" value="Help">
+      </div>
+      
+      <!--frame3-->
+      
+      <div class="clear"></div>
+    </div>
+    
+    <!--step5-->
+    
+    <div class="popup" id="form5true">
+      <p>Great, you worked it out. </p>
+    </div>
+    
+    <!--form5true-->
+    
+    <div class="popup" id="form5false">
+      <p>Sorry, that is incorrect.</p>
+      <input type="button" value="Try Again" class="tryagain">
+      <input type="button" value="Help" id="nextstep5b">
+    </div>
+    
+    <!--form5false-->
+    
+    <div id="subresult4">
+      <div class="frame1">
+        <h3>Step 4: We now have a simplified answer.</h3>
+      </div>
+      
+      <!--frame1-->
+      
+      <div class="frame2">
+        <p style="margin-left:90px;border-bottom-width: medium;	
+	border-bottom-style: solid;	
+	border-bottom-color: #000;width:120px;">
+          <input type="text"  size="2" readonly value="1">
+          yard<br>
+          <br>
+          <span style="font-size:250%;">+</span>
+          <input type="text"  size="2" readonly value="1">
+          yard</p>
+        <p>
+          <input type="text"  size="2" readonly value="2">
+          Yards
+          <input type="text"  size="2" readonly value="2">
+          Feet
+          <input type="text"   size="2" readonly value="7">
+          Inches</p>
+      </div>
+      
+      <!--frame2-->
+      
+      <div class="clear"></div>
+    </div>
+  </div>
+  
+  <!--subresult4--> 
+  
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,192 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: 'Asap', sans-serif;
+	
+}
+#header a {
+	color: #FFF;
+	text-decoration: none;
+}
+.wrapper {
+	padding: 0px;
+	width: 980px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#header {
+	color: #FFF;
+	background-color: #000;
+	opacity:.8;
+}
+.clear {
+	clear: both;
+}
+.frame1 {
+	margin: 5px;
+	padding: 5px;
+	float: left;
+	width: 40%;
+	text-align:left;
+}
+.frame2 {
+	margin: 5px;
+	padding: 5px;
+	float: left;
+	width: 38%;
+	text-align:right;
+}
+.frame3 {
+	margin: 5px;
+	padding: 5px;
+	float: left;
+	width: 15%;
+	text-align:right;
+}
+#footer .wrapper {
+	margin-top:10px;
+	text-align: right;
+}
+
+h2 , h3 {
+	color: #006699;
+	font-size:110%;
+	font-weight:normal;
+}
+h1 {
+	margin:5px;
+	color: #006699;
+}
+#step1 {
+	background-color:#FFFFFF;
+	-webkit-box-shadow: 0px 3px 5px 3px rgba(000, 000, 000, .3);
+-moz-box-shadow: 0px 3px 5px 3px rgba(000, 000, 000, .3);
+box-shadow: 0px 3px 5px 3px rgba(000, 000, 000, .3); 
+	border-bottom-width: medium;
+	border-bottom-style: solid;
+	border-bottom-color: #999;	
+	margin: 10px 0px;
+}
+#workbook {
+	background-color:#EEEEEE;
+	padding:3px;
+	margin:0px;
+}
+#step2 , #subresult1 {
+	background-color:#DDDDDD;
+	
+}
+#step3 , #subresult2 {
+	background-color:#CCCCCC;
+	
+}
+#step4 , #subresult3 {
+	background-color:#BBBBBB;
+	
+}
+#step5 ,  #subresult4 {
+	background-color:#AAAAAA;
+	
+}
+#main {
+	font-size: 85%;
+}
+input {
+	text-align:right;
+	font-size:110%;
+	border-top-width: 5px;
+	border-right-width: 5px;
+	border-bottom-width: 3px;
+	border-left-width: 3px;	
+}
+input[readonly] {
+	background:none;
+	font-size:110%;
+	border:none;
+	
+}
+p {
+	font-size:100%;
+}
+#ruler {
+	width:960px;
+	background-image:url(images/ruler.png);
+	margin: 5px auto 5px auto;
+	height:35px;
+	
+}
+#ruler-yards {
+	float:left;
+	width:288px;
+	height:35px;
+	margin:0px;
+	padding: 0px 0px 0px 0px;
+	background-color:rgb( 159,248,159);
+	
+}
+#ruler-feet {
+	float:left;
+	width:192px;
+	height:35px;
+	margin:0px;
+	padding:0px;
+	background-color: rgb(248,159,159);
+	
+}
+#ruler-inches {
+	float:left;
+	width:344px;
+	height:35px;
+	margin:0px;
+	padding:0px;
+	background-color:rgb( 159,159,248);
+	
+}
+.ruler-caption {
+	margin: 0px;
+	padding: 10px;
+	font-size:80%;
+}
+.translucent , .ui-dialog {
+	zoom: 1;
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+}
+#subresult1 p , #subresult2 p , #subresult3 p , #subresult4 p ,#step2 p , #step3 p , #step4 p , #step5 p  {
+	line-height:65%;
+}
+table {
+	float:right;
+	margin-left:10px;
+}
+.division1 {
+	border-right-width: medium;
+	border-right-style: solid;
+	border-right-color: #000;
+	-webkit-border-top-right-radius: 15px;
+-webkit-border-bottom-right-radius: 15px;
+-moz-border-radius-topright: 15px;
+-moz-border-radius-bottomright: 15px;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+}
+.division2 {
+	border-top-width: medium;
+	
+	border-top-style: solid;
+	
+	border-top-color: #000;
+	
+	padding-bottom:5px;
+	
+}
+.remainder {
+	
+	border-top-width: medium;	
+	border-top-style: solid;	
+	border-top-color: #000;
+	
+}
