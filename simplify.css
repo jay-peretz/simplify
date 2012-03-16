@@ -3,6 +3,10 @@
 
 body {
 	font-family: 'Asap', sans-serif;
+	background: rgb(249,252,247);
+
+
+
 	
 }
 #header a {
@@ -53,7 +57,7 @@ body {
 
 h2 , h3 {
 	color: #006699;
-	font-size:110%;
+	font-size:150%;
 	font-weight:normal;
 }
 h1 {
@@ -189,4 +193,7 @@ border-bottom-right-radius: 15px;
 	border-top-style: solid;	
 	border-top-color: #000;
 	
+}
+#step1 {
+   padding-top:5px;
 }

@@ -24,7 +24,7 @@
 <div id="main">
   <div class="wrapper">
     <div id="problem">
-      <h2>Simplifying Units of Measurement</h2>
+      <h2><strong>Simplifying Units of Measurement</strong></h2>
     </div>
     <!--problem-->
     <div id="ruler">
@@ -37,58 +37,6 @@
       <div id="ruler-inches" class="translucent">
         <div class="ruler-caption"><span id="in">43</span> In</div>
       </div>
-    </div>
-    <div id="step1" class="ui-corner-all">
-      <div class="frame1">
-        <h3>Simplify this Measurement</h3>
-      </div>
-      
-      <!--frame1-->
-      
-      <div class="frame2">
-        <p>
-          <input type="text" id="givenyards" size="2" readonly value="1">
-          Yards
-          <input type="text" id="givenfeet" size="2" readonly  value="2">
-          Feet
-          <input type="text" id="giveninches" size="2" readonly  value="43">
-          Inches<br>
-          <br>
-          answer <span style="font-size:250%;">=</span>
-          <input type="text" id="yards" size="2">
-          Yards
-          <input type="text" id="feet" size="2">
-          Feet
-          <input type="text" id="inches" size="2">
-          Inches </p>
-      </div>
-      
-      <!--frame2-->
-      
-      <div class="frame3">
-        <input type="button" class="button" id="form1enter" value="Enter">
-        <br>
-        <br>
-        <input type="button" class="button" id="form1help" value="Help" >
-      </div>
-      
-      <!--frame3-->
-      
-      <div class="clear"></div>
-      <div class="popup" id="form1true">
-        <p>Wow, great work!</p>
-      </div>
-      
-      <!--form1true-->
-      
-      <div class="popup" id="form1false">
-        <h3>Sorry, that's incorrect.</h3>
-        <input type="button" value="Try Again" class="tryagain">
-        <input type="button" value="Help" id="nextstep1">
-      </div>
-      
-      <!--form1false--> 
-      
     </div>
     
     <!--step1-->
@@ -414,8 +362,7 @@
           <span style="font-size:250%;">+</span>
           <input type="text"  size="2" readonly value="1">
           Yard</p>
-          <p style="margin-left:90px;width:120px;">
-          <span style="font-size:250%;">=</span>
+        <p style="margin-left:90px;width:120px;"> <span style="font-size:250%;">=</span>
           <input type="text" id="totalyards" size="2"  >
           Yards</p>
       </div>
@@ -480,11 +427,61 @@
       
       <div class="clear"></div>
     </div>
+    
+    <!--subresult4-->
+    <div id="step1" class="ui-corner-all">
+      <div class="frame1">
+        <h3>Simplify this Measurement</h3>
+        <p>
+          <input type="text" id="givenyards" size="2" readonly value="1">
+          Yards
+          <input type="text" id="givenfeet" size="2" readonly  value="2">
+          Feet
+          <input type="text" id="giveninches" size="2" readonly  value="43">
+          Inches</p>
+      </div>
+      
+      <!--frame1-->
+      
+      <div class="frame2"> <br>
+        <br>
+        <p> <span style="font-size:250%;">=</span>
+          <input type="text" id="yards" size="2">
+          Yards
+          <input type="text" id="feet" size="2">
+          Feet
+          <input type="text" id="inches" size="2">
+          Inches </p>
+      </div>
+      
+      <!--frame2-->
+      
+      <div class="frame3">
+        <input type="button" class="button" id="form1enter" value="Enter">
+        <br>
+        <br>
+        <input type="button" class="button" id="form1help" value="Help" >
+      </div>
+      
+      <!--frame3-->
+      
+      <div class="clear"></div>
+      <div class="popup" id="form1true">
+        <p>Wow, great work!</p>
+      </div>
+      
+      <!--form1true-->
+      
+      <div class="popup" id="form1false">
+        <h3>Sorry, that's incorrect.</h3>
+        <input type="button" value="Try Again" class="tryagain">
+        <input type="button" value="Help" id="nextstep1">
+      </div>
+      
+      <!--form1false--> 
+      </div>
+    </div>
   </div>
-  
-  <!--subresult4--> 
-  
-</div>
 </div>
 </body>
 </html>
